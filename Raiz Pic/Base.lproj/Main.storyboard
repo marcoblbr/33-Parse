@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Raiz_Pic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WmS-vn-sEs">
+                                <rect key="frame" x="0.0" y="148" width="600" height="452"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-Fv-frw">
+                                <rect key="frame" x="262" y="20" width="76" height="30"/>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EvD-HR-9sJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYe-xk-SeL">
+                                <rect key="frame" x="16" y="20" width="43" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofU-US-Aok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ob-lf-4fT">
+                                <rect key="frame" x="502" y="20" width="82" height="30"/>
+                                <state key="normal" title="Create Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCreateAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGZ-gM-cbG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkQ-Fx-53g">
+                                <rect key="frame" x="274" y="67" width="53" height="30"/>
+                                <state key="normal" title="Restore">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonRestore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2B-AI-ftC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WmS-vn-sEs" secondAttribute="bottom" id="3Dw-Hs-tKV"/>
+                            <constraint firstItem="vkQ-Fx-53g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="7x4-Ji-Kg7"/>
+                            <constraint firstItem="WmS-vn-sEs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Afw-SD-CD2"/>
+                            <constraint firstItem="JYe-xk-SeL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G9F-Io-vOH"/>
+                            <constraint firstItem="JYe-xk-SeL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PiK-zy-coB"/>
+                            <constraint firstItem="6Ob-lf-4fT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QqV-Un-Lvd"/>
+                            <constraint firstItem="6Ob-lf-4fT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WaF-vQ-Bsf"/>
+                            <constraint firstItem="WmS-vn-sEs" firstAttribute="top" secondItem="vkQ-Fx-53g" secondAttribute="bottom" constant="51" id="bKJ-e8-VEh"/>
+                            <constraint firstItem="vKE-Fv-frw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dHI-aE-3Ji"/>
+                            <constraint firstAttribute="centerX" secondItem="vkQ-Fx-53g" secondAttribute="centerX" constant="-0.5" id="dKK-c2-MUQ"/>
+                            <constraint firstAttribute="trailing" secondItem="WmS-vn-sEs" secondAttribute="trailing" id="iZA-ch-67C"/>
+                            <constraint firstAttribute="centerX" secondItem="vKE-Fv-frw" secondAttribute="centerX" id="wrx-eZ-6yx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePicked" destination="WmS-vn-sEs" id="4DD-zZ-230"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="179"/>
+        </scene>
+    </scenes>
+</document>
